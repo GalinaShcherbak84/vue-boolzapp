@@ -36,12 +36,13 @@ img{
     height:50px;
     border-radius: 50%;
     margin-right: 10px;
+    cursor: pointer;
 }
 i{
     font-size: 20px;
     padding: 0 6px;
     color:#bababa;
-    font-weight: 400;
+    cursor: pointer;
 }
 body{
     height: 100vh;
@@ -98,8 +99,9 @@ body{
     height: 40px;
     text-align: center;
     line-height: 40px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px #ededed;
     background-color: white;
+    border-radius: 5px 0 0 5px;
 }
 
 .src i{
@@ -110,8 +112,13 @@ input{
     width: 80%;
     height: 40px;
     border: none;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px #ededed; 
     outline: none;
+    color:#bababa;
+    padding: 6px;
+    background-color: white;
+    appearance: none;
+    border-radius: 0 5px 5px 0;
 }
 li{
     list-style: none;
@@ -122,6 +129,10 @@ li{
 }
 li:last-child{
     border-bottom: none;
+}
+li img{
+    width: 60px;
+    height:60px;
 }
 /* main */
 .content{
@@ -145,4 +156,21 @@ li:last-child{
 .content-main{
     flex-grow: 1;
     overflow-y: auto;
+}
+/* footer */
+.content-footer{
+    background-color:#f4f0ed;
+}
+.content-footer input{
+    width: 80%;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 0px 3px #ededed;
+}
+.content-footer .src{
+    width: 10%;
+    background-color:#f4f0ed ;
+}
+.content-footer .src i{
+    font-size: 20px;
 }

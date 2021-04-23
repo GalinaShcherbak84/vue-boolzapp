@@ -154,49 +154,37 @@ li img{
     margin-left: 1px;
 }
 .content-main{
+    display: flex;
+    justify-content: center;
     flex-grow: 1;
     overflow-y: auto;
     padding:3% 10%;
 }
-.copia{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.messaggio-container,
-.messaggio-container1{
-    
-}
-.messaggio-container1{
+.messaggi-ricevuti{
     margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
-.messaggio-container{
-    margin-bottom: 50px;
+.messaggi-inviati{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
-.messaggio-ricevuto,
-.messaggio-inviato{
-    width: 300px;
-    min-height: 50px;
-    padding: 0 10px;
-    border-radius: 10px;
-    justify-content: space-between;
-    margin: 5px 0;
-}
-.messaggio-ricevuto{
-    background-color: white;
-}
-.messaggio-inviato{
+.messaggi-inviati .messaggio{
     background-color: #ddfabf;
 }
-
-.messaggio-container p,
-.messaggio-container1 p{
-    padding-bottom: 5px;
+.messaggio{
+    min-height: 50px;
+    padding:10px;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3px 0;
 }
-p.data{
+.data p{
     font-size: 10px;
-    padding-top: 30px;
-    padding-bottom: 0;
     color:#bababa;
     text-align: right;
 }

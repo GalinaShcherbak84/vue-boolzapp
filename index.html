@@ -18,7 +18,7 @@
 <body>
     <div class="app">
         <!-- asaid -->
-        <asaid class="side">
+        <div class="side">
             <!-- side-header -->
             <section class="side-header flex1">
                 <div class="left flex">
@@ -51,26 +51,17 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </section>
             </div>
-            <ul>
-                <li class="flex">
-                    <img src="./img/avatar_2.jpg" alt="avatar">
-                    <h3>Fabio</h3>
+            <ul >
+                <li v-for ="(avatar, index) in yourPropNameHere" class="flex">
+                    <img v-bind:src=" './img/avatar' + 'avatar.avatar' + '.jpg'" alt="">
+                    <h3>{{avatar.name}}</h3>
                 </li>
-                <li class="flex">
-                    <img src="./img/avatar_2.jpg" alt="avatar">
-                    <h3>Fabio</h3>
-                </li>
-                <li class="flex">
-                    <img src="./img/avatar_2.jpg" alt="avatar">
-                    <h3>Fabio</h3>
-                </li>
-                
                 
             </ul>
-        </asaid>
+        </div>
        <!--  main -->
         <main class="content">
-            <!-- content-header -->
+            <!-- content-header --> 
             <section class="content-header flex1">
                 <div class="left flex">
                     <img src="./img/avatar_1.jpg" alt="nome utente">
@@ -116,6 +107,6 @@
         </main>
     </div>
 <!-- link js -->
-<script src="./contatti.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

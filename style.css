@@ -154,31 +154,25 @@ li img{
     margin-left: 1px;
 }
 .content-main{
-    display: flex;
-    justify-content: center;
     flex-grow: 1;
     overflow-y: auto;
     padding:3% 10%;
 }
 .messaggi-ricevuti{
-    margin-top: 50px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 .messaggi-inviati{
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 .messaggi-inviati .messaggio{
     background-color: #ddfabf;
 }
 .messaggio{
+    width: 280px;
     min-height: 50px;
     padding:10px;
-    width: 95%;
     background-color: white;
     border-radius: 10px;
     margin: 3px 0;

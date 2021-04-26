@@ -78,10 +78,10 @@
             </section>
             <!-- content-main/messaggi-->
             <section class="content-main">
-                <div class="messaggi-ricevuti" v-for = " item in this.yourPropNameHere[this.indexUtente].messages">
+                <div class="messaggi-ricevuti" v-for = " item in yourPropNameHere[indexUtente].messages">
                     <div class="messaggio" >
                         <p>{{item.message}}</p>
-                        <div class="data"><p> {{item.message}}</p></div>
+                        <div class="data"><p> {{item.date}}</p></div>
                     </div>
                 </div>
                 <div class="messaggi-inviati">

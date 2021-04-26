@@ -23,7 +23,7 @@
             <section class="side-header flex1">
                 <div class="left flex">
                     <img src="./img/avatar_io.jpg" alt="nome utente">
-                    <h3>Nome utente</h3>
+                    <h3><a href="#"> Nome utente</a></h3>
                 </div>
                 <div class="right">
                     <i class="fas fa-circle-notch"></i>
@@ -52,9 +52,9 @@
                 </section>
             </div>
             <ul >
-                <li v-for ="(avatar, index) in yourPropNameHere" class="flex">
+                <li v-for ="(avatar, index) in yourPropNameHere" @click="messaggi(index)" class="flex">
                     <img v-bind:src=" './img/avatar' + avatar.avatar + '.jpg'" alt="">
-                    <h3>{{avatar.name}}</h3>
+                    <a  href="#"><h3>{{avatar.name}}</h3></a>
                 </li>
                 
             </ul>
@@ -66,7 +66,7 @@
                 <div class="left flex">
                     <img src="./img/avatar_1.jpg" alt="nome utente">
                     <div class="text">
-                        <h3>Michele</h3>
+                        <h3><a href="#"> Michele</a></h3>
                         <p class="p">Ultimo accesso oggi alle 10.35</p>
                     </div>
                 </div>
@@ -78,24 +78,7 @@
             </section>
             <!-- content-main/messaggi-->
             <section class="content-main">
-                <div class="messaggi-ricevuti">
-                    <div class="messaggio">
-                        <p>Messaggio ricevuto</p>
-                        <div class="data"><p> 30/01/2021 15:50:00</p></div>
-                    </div>
-                    <div class="messaggio">
-                        <p>Messaggio ricevuto</p>
-                        <div class="data"><p> 30/01/2021 15:50:00</p></div>
-                    </div>
-                    
-                </div>
-                <div class="messaggi-inviati">
-                    <div class="messaggio">
-                        <p>Messaggio inviato</p>
-                        <div class="data"><p> 30/01/2021 15:50:00</p></div>
-                    </div>
-                </div>
-                <div class="messaggi-ricevuti">
+                <div class="messaggi-ricevuti" >
                     <div class="messaggio">
                         <p>Messaggio ricevuto</p>
                         <div class="data"><p> 30/01/2021 15:50:00</p></div>

@@ -92,12 +92,15 @@ const app = new Vue({
             },
         ],
         indexUtente: 0,
+        classeMess: 'messaggi-inviati',
+
     },
     methods:{
         messaggi(index){ 
             console.log(index);  
              this.indexUtente = index;
              console.log(this.yourPropNameHere[this.indexUtente].messages);
+                
         },
         
     },

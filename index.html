@@ -78,16 +78,11 @@
             </section>
             <!-- content-main/messaggi-->
             <section class="content-main">
-                <div class="messaggi-ricevuti" v-for = " item in yourPropNameHere[indexUtente].messages">
-                    <div class="messaggio" >
+                <div  v-for = " item in yourPropNameHere[indexUtente].messages"
+                v-bind:class="{ messaggiInviati: item.status == 'sent' }">
+                    <div class="messaggio " >
                         <p>{{item.message}}</p>
                         <div class="data"><p> {{item.date}}</p></div>
-                    </div>
-                </div>
-                <div class="messaggi-inviati">
-                    <div class="messaggio">
-                        <p>Messaggio inviato</p>
-                        <div class="data"><p> 30/01/2021 15:50:00</p></div>
                     </div>
                 </div>
                 

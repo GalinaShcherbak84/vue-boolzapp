@@ -2,7 +2,8 @@
 const app = new Vue({
     el: ".app",
     data: { 
-        indexUtente: 0,
+        
+        
         // Elenco contatti
         yourPropNameHere: [
             {
@@ -90,11 +91,15 @@ const app = new Vue({
                 ],
             },
         ],
+        indexUtente: 0,
     },
     methods:{
         messaggi(index){ 
-            console.log(index);
-        }
+            console.log(index);  
+             this.indexUtente = index;
+             console.log(this.yourPropNameHere[this.indexUtente].messages);
+        },
+        
     },
     
 })

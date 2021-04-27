@@ -48,7 +48,11 @@
                     <div class="src">
                         <i class="fas fa-search"></i>
                     </div>
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input
+                    v-model.trim = "ricerca"
+                    @keyup = "search"
+                    type="text" 
+                    placeholder="Cerca o inizia una nuova chat">
                 </section>
             </div>
             <ul >

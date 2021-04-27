@@ -93,6 +93,7 @@ const app = new Vue({
         ],
         indexUtente: 0,
         newMessage: '',
+        ricerca: '',
 
     },
     methods:{
@@ -122,6 +123,9 @@ const app = new Vue({
             }
             
         },
+        search(){
+            console.log(this.ricerca);
+        }
     },
     
 })

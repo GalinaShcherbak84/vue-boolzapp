@@ -50,7 +50,6 @@
                     </div>
                     <input
                     v-model.trim = "ricerca"
-                    @keyup = "search"
                     type="text" 
                     placeholder="Cerca o inizia una nuova chat">
                 </section>
@@ -58,7 +57,7 @@
             <ul >
                 <li 
                 v-for ="(avatar, index) in yourPropNameHere"
-                v-if = "avatar.name.includes(ricerca)"
+                v-if = "avatar.name.toLowerCase().includes(ricerca.toLowerCase())"
                 @click="messaggi(index)"
                 class="flex" 
                 :class="{active: index == indexUtente}">

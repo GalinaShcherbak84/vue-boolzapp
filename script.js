@@ -124,10 +124,7 @@ const app = new Vue({
             }
             
         },
-        search(){
-            console.log(this.ricerca);
-            
-        }
+    
     },
     
 })

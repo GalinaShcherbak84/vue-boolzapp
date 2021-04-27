@@ -64,9 +64,9 @@
             <!-- content-header --> 
             <section class="content-header flex1">
                 <div class="left flex">
-                    <img src="./img/avatar_1.jpg" alt="nome utente">
+                    <img :src="`./img/avatar${yourPropNameHere[indexUtente].avatar}.jpg`" alt="nome utente">
                     <div class="text">
-                        <h3><a href="#"> Michele</a></h3>
+                        <h3><a href="#">{{ yourPropNameHere[indexUtente].name}}</a></h3>
                         <p class="p">Ultimo accesso oggi alle 10.35</p>
                     </div>
                 </div>

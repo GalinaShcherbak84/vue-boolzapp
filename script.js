@@ -1,3 +1,7 @@
+/* plugins */
+dayjs.locale('it');
+dayjs.extend(dayjs_plugin_customParseFormat);
+dayjs().format('DD/MM/YYYY'+''+'HH:mm:ss');
 
 const app = new Vue({
     el: ".app",
@@ -107,14 +111,14 @@ const app = new Vue({
         addMessage(){
             if(this.newMessage !== ''){
                 this.yourPropNameHere[this.indexUtente].messages.push({
-                    date: '10/01/2020 15:50:00',
+                    date: dayjs().format('DD/MM/YYYY'+' '+'HH:mm:ss'),
                     message: this.newMessage,
                     status: 'sent'
                 });
                 setTimeout(() => {
                     console.log('ok');
                     this.yourPropNameHere[this.indexUtente].messages.push({
-                        date: '10/01/2020 15:50:00',
+                        date: dayjs().format('DD/MM/YYYY'+' '+'HH:mm:ss'),
                         message: 'Ok',
                         status: 'received'
                     });

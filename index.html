@@ -52,7 +52,7 @@
                 </section>
             </div>
             <ul >
-                <li v-for ="(avatar, index) in yourPropNameHere" @click="messaggi(index)" class="flex">
+                <li  v-for ="(avatar, index) in yourPropNameHere" @click="messaggi(index)" class="flex" :class="{active: index == indexUtente}">
                     <img v-bind:src=" './img/avatar' + avatar.avatar + '.jpg'" alt="">
                     <a  href="#"><h3>{{avatar.name}}</h3></a>
                 </li>

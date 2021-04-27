@@ -141,6 +141,9 @@ li img{
     height:60px;
 }
 /* main */
+.active{
+    background-color: #ededed;
+}
 .content{
     flex-basis: 65%;
     background-image: url(./img/mine.jpg);

@@ -93,7 +93,11 @@
                 <div class="src">
                     <i class="far fa-smile"></i>
                 </div>
-                <input type="text" placeholder="Scrivi un messaggio">
+                <input
+                    v-model.trim = "newMessage"
+                    @keyup.enter = "addMessage"
+                    type="text"
+                    placeholder="Scrivi un messaggio">
                 <div class="src">
                     <i class="fas fa-microphone"></i>
                 </div>

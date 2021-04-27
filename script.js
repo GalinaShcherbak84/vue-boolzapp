@@ -92,7 +92,7 @@ const app = new Vue({
             },
         ],
         indexUtente: 0,
-        classeMess: 'messaggi-inviati',
+        newMessage: '',
 
     },
     methods:{
@@ -102,7 +102,16 @@ const app = new Vue({
              console.log(this.yourPropNameHere[this.indexUtente].messages);
                 
         },
-        
+        addMessage(){
+            if(this.newMessage !== ''){
+                this.yourPropNameHere[this.indexUtente].messages.push({
+                    date: '10/01/2020 15:50:00',
+                    message: this.newMessage,
+                    status: 'sent'
+                });
+                this.newMessage = ''
+            }
+        },
     },
     
 })

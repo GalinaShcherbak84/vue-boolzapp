@@ -94,6 +94,7 @@ const app = new Vue({
         indexUtente: 0,
         newMessage: '',
         ricerca: '',
+        yourPropNameHereNew:[],
 
     },
     methods:{
@@ -125,6 +126,7 @@ const app = new Vue({
         },
         search(){
             console.log(this.ricerca);
+            
         }
     },
     

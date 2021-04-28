@@ -99,7 +99,8 @@ const app = new Vue({
         newMessage: '',
         ricerca: '',
         yourPropNameHereNew:[],
-
+        rispostaRandom:['Ok','No','Si, va bene', 'Grazie', 'Fallo tu', 'Non voglio', 'Ciao', 'Sono occupato', 'Forse'],
+    
     },
     methods:{
         messaggi(index){ 
@@ -119,7 +120,7 @@ const app = new Vue({
                     console.log('ok');
                     this.yourPropNameHere[this.indexUtente].messages.push({
                         date: dayjs().format('DD/MM/YYYY'+' '+'HH:mm:ss'),
-                        message: 'Ok',
+                        message: this.rispostaRandom[this.random(this.rispostaRandom.length-1)],
                         status: 'received'
                     });
 
@@ -128,7 +129,10 @@ const app = new Vue({
             }
             
         },
-    
+        random(num){
+           return Math.floor(Math.random() * num );
+        },
+        
     },
     
 })

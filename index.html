@@ -86,12 +86,20 @@
             </section>
             <!-- content-main/messaggi-->
             <section class="content-main">
-                <div  v-for = " item in yourPropNameHere[indexUtente].messages"
+                <div  v-for = " (item, index) in yourPropNameHere[indexUtente].messages"
                 v-bind:class="{ messaggiInviati: item.status == 'sent' }">
                     <div class="messaggio " >
-                        <p>{{item.message}}</p>
-                        <div class="data"><p> {{item.date}}</p></div>
+                        <div>
+                            <p>{{item.message}}</p>
+                            <div class="data"><p> {{item.date}}</p></div>
+                        </div>
+                        
+                        <div class="delite" 
+                        @click="cancella(index)">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
                     </div>
+                    
                 </div>
                 
             </section>

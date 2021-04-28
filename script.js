@@ -132,6 +132,10 @@ const app = new Vue({
         random(num){
            return Math.floor(Math.random() * num );
         },
+
+        cancella(index){
+            this.yourPropNameHere[this.indexUtente].messages.splice(index, 1);
+        }
         
     },
     

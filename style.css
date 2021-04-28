@@ -169,16 +169,21 @@ li img{
 }
 .messaggiRicevuti{
     width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
 }
 .messaggiInviati{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .messaggiInviati .messaggio{
     background-color: #ddfabf;
 }
 .messaggio{
+    position: relative;
     width: 280px;
     min-height: 50px;
     padding:10px;
@@ -186,6 +191,22 @@ li img{
     border-radius: 10px;
     margin: 3px 0;
 }
+.messaggio div:first-child{
+    padding-right: 40px;
+}
+.delite{
+    display: none;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+.delite i{
+    font-size: 16px;
+}
+.messaggio:hover .delite{
+    display: block;
+}
+
 .data p{
     font-size: 10px;
     color:#bababa;
